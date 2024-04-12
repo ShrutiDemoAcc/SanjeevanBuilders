@@ -11,7 +11,7 @@ def load_lottieurl(url):
         return None
     return r.json()
 FileUrl = load_lottieurl("https://lottie.host/16c2863d-2ee6-4699-979e-a9cb1a0d723b/6lLOKzEUVf.json")
-Img_contact_form = Image.open("ima\output.png")
+Img_contact_form = Image.open("ima/output.png")
 
 def local_css(file_name):
     with open(file_name) as f:
