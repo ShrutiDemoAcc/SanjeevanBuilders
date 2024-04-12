@@ -81,17 +81,33 @@ with st.container():
     st.header("get in touch with me!")
     st.write("##")
     #go to formsubmit.co
-    contact_form =(
-    """
-    <form action="https://formsubmit.co/patilsagar18995@gmail.com" method="POST">
-     <input type="text" name="name" placeholder="Your name" required>
-     <input type="email" name="email" placeholder=Email email" required>
-     <textarea name="message" placeholder="Your message here" required></textarea>
-     
-     <button type="submit">Send</button>
-    </form>
-    """
-    )
+    # contact_form =(
+    # """
+    # <form action="https://formsubmit.co/shrutipatil2204@gmail.com" method="POST">
+    #  <input type="text" name="name" placeholder="Your name" required>
+    #  <input type="email" name="email" placeholder=Email email" required>
+    #  <textarea name="message" placeholder="Your message here" required></textarea>
+    #
+    #  <button type="submit">Send</button>
+    # </form>
+    # <form action="https://formsubmit.co/shrutipatil2204@gmail.com" method="POST">
+    #     <input type="hidden" name="_captcha" value="false">
+    #     <input type="text" name="name" placeholder="Your name" required>
+    #     <input type="email" name="email" placeholder="Your email" required>
+    #     <textarea name="message" placeholder="Your message here" required></textarea>
+    #     <button type="submit">Send</button>
+    # </form>
+    # """
+    # )
+    contact_form = """
+        <form action="https://formsubmit.co/patil.sagar18995@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="message" placeholder="Your message here" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        """
     left_column, right_column = st.columns(2)
     with left_column:
         st.markdown(contact_form, unsafe_allow_html=True)
